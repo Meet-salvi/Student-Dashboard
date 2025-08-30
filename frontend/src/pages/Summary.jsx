@@ -5,7 +5,6 @@ import AttendanceDonutChart from "./AttendanceDonutChart";
 import axios from "axios";
 
 function Summary() {
-  const [attendance, setAttendance] = useState([]);
   const [trendData, setTrendData] = useState([]);
   const [donutData, setDonutData] = useState([]);
 
@@ -13,7 +12,6 @@ function Summary() {
     const fetchAttendance = async () => {
       try {
         const res = await axios.get("http://localhost:8000/api/attendance");
-        setAttendance(res.data);
 
         // Class-wise attendance % (donut chart)
         const classMap = {};
@@ -69,9 +67,6 @@ function Summary() {
             <h2>{avgAttendance}%</h2>
           </div>
         </section>
-
-        {/* Student Table */}
-        
       </main>
     </div>
   );
