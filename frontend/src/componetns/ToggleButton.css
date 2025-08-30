@@ -1,0 +1,68 @@
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Arial, sans-serif;
+}
+
+/* Switch track */
+.triple-switch {
+  position: relative;
+  width: 90px;
+  height: 32px;
+  background: #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Knob */
+.triple-switch .knob {
+  position: absolute;
+  top: 3px;
+  width: 26px;
+  height: 26px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+/* Center (default - Not Marked) */
+.triple-switch.not-marked {
+  background: #9ca3af; /* gray */
+}
+.triple-switch.not-marked .knob {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Present (Left) */
+.triple-switch.present {
+  background: #4caf50; /* green */
+}
+.triple-switch.present .knob {
+  left: 3px;
+  transform: translateX(0);
+}
+
+/* Absent (Right) */
+.triple-switch.absent {
+  background: #f44336; /* red */
+}
+.triple-switch.absent .knob {
+  left: calc(100% - 29px);
+}
+
+/* Status text */
+.status-label {
+  font-weight: bold;
+}
+.status-label.present {
+  color: #4caf50;
+}
+.status-label.absent {
+  color: #f44336;
+}
+.status-label.not-marked {
+  color: #9ca3af;
+}

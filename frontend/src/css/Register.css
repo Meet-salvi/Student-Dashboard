@@ -1,0 +1,90 @@
+/* Full page center */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f9fafb;
+  font-family: Arial, sans-serif;
+}
+
+/* White card */
+.register-box {
+  width: 380px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.register-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input groups */
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #10b981;
+  box-shadow: 0px 0px 4px rgba(16, 185, 129, 0.5);
+}
+
+/* Register button */
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background: #059669;
+}
+
+/* Footer text */
+.footer-text {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.footer-text a {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}

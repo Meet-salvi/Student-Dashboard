@@ -1,0 +1,131 @@
+/* === Global === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/*  Main Content*/
+.main {
+  flex: 1;
+  padding: 24px;
+}
+
+/* Stat Cards */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 14px;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-top: 8px;
+}
+
+.card.blue { background: #2563eb; }
+.card.green { background: #16a34a; }
+.card.purple { background: #7c3aed; }
+.card.orange { background: #ea580c; }
+
+/* Charts */
+.charts {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.chart, .income {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.placeholder {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  color: #9ca3af;
+  border-radius: 10px;
+}
+
+.income h2 {
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Bottom Section */
+.bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.appointments, .files {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.appointments table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.appointments th, .appointments td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+.appointments tr:hover {
+  background: #f9fafb;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tag.yellow { background: #facc15; color: #333; }
+.tag.green { background: #22c55e; }
+.tag.pink { background: #ec4899; }
+.tag.red { background: #ef4444; }
+
+/* Files */
+.files ul {
+  list-style: none;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.files ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.files ul li:hover {
+  color: #2563eb;
+}
