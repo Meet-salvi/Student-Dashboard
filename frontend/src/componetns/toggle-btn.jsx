@@ -17,7 +17,7 @@ function AttToggle({ studId, attStatus }) {
       console.error("Error updating attendance:", error);
     }
   };
-
+  
   return (
     <div className="d-flex gap-2">
       <Button

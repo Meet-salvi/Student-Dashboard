@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/StudentList.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Dropdown from "react-bootstrap/Dropdown";
-
 import { Table, Button } from "react-bootstrap";
 import AttToggle from "../componetns/toggle-btn";
 import axios from "axios";

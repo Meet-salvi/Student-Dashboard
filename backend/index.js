@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.get('/', (req, res) => {
-    return res.json({ message: "Success" });
+    return res.json({ message: "Success" }); 
 });
 
 // Login 
@@ -52,7 +52,6 @@ app.post('/api/login', async (req, res) => {
     }
 })
 
-
 // fetch all students
 app.get('/api/students', async (req, res) => {
     try {
@@ -84,7 +83,6 @@ app.get('/api/students', async (req, res) => {
                 };
             })
         );
-
 
 
         return res.status(200).json({ message: "Success", students: studentsWithStatus });
